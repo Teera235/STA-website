@@ -1,44 +1,19 @@
 import { motion } from 'framer-motion';
-import { useState, useEffect } from 'react';
 
 const Hero = () => {
-  const [currentBg, setCurrentBg] = useState(0);
-  
-  const backgrounds = [
-    '/hero-bg-1.gif',
-    '/hero-bg-2.gif',
-    '/hero-bg-3.gif',
-    '/hero-bg-4.gif'
-  ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentBg((prev) => (prev + 1) % backgrounds.length);
-    }, 10000); // Change every 10 seconds
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <div className="relative min-h-screen w-full overflow-hidden flex items-center">
-      {/* Background Images with Fade Transition */}
-      {backgrounds.map((bg, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            currentBg === index ? 'opacity-100' : 'opacity-0'
-          }`}
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img 
+          src="/bg.webp" 
+          alt="Background"
+          loading="eager"
+          className="absolute inset-0 w-full h-full object-cover"
           style={{ filter: 'brightness(0.7)' }}
-        >
-          <img 
-            src={bg}
-            alt="Background"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-        </div>
-      ))}
-      
-      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
+      </div>
 
       {/* Content */}
       <div className="relative w-full max-w-7xl mx-auto px-6 lg:px-8 py-32">
