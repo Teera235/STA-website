@@ -7,8 +7,9 @@ const About = () => {
       {/* Hero Image Section */}
       <div className="relative h-[600px] overflow-hidden">
         <img 
-          src="/about-sta.png" 
-          alt="STA Team" 
+          src="/about-sta.webp" 
+          alt="STA Team"
+          loading="lazy"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
@@ -38,10 +39,10 @@ const About = () => {
       </div>
 
       {/* Content Section */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20 pb-20">
         
         {/* Main Story */}
-        <div className="grid lg:grid-cols-2 gap-12 mb-20">
+        <div className="grid lg:grid-cols-2 gap-12">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -94,55 +95,6 @@ const About = () => {
             </div>
           </motion.div>
         </div>
-
-        {/* Stats Section */}
-        <motion.div
-          className="border-t border-gray-200 pt-16"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <h3 className="text-2xl font-black text-space-black mb-8 text-center">By The Numbers</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-5xl font-black text-burnt-orange font-mono mb-2">50+</div>
-              <div className="text-sm text-gray-600 uppercase tracking-wider">Active Members</div>
-            </div>
-            
-            <div className="text-center">
-              <div className="text-5xl font-black text-burnt-orange font-mono mb-2">6+</div>
-              <div className="text-sm text-gray-600 uppercase tracking-wider">Subsystems</div>
-            </div>
-            
-            <div className="text-center">
-              <div className="text-5xl font-black text-burnt-orange font-mono mb-2">2025</div>
-              <div className="text-sm text-gray-600 uppercase tracking-wider">SAC Competition</div>
-            </div>
-            
-            <div className="text-center">
-              <div className="text-5xl font-black text-burnt-orange font-mono mb-2">1U+</div>
-              <div className="text-sm text-gray-600 uppercase tracking-wider">CubeSat Project</div>
-            </div>
-          </div>
-        </motion.div>
-
-        {/* Mission Statement */}
-        <motion.div
-          className="mt-20 bg-space-black text-white p-12 rounded-lg"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-3xl font-black mb-6">Our Goal</h3>
-            <p className="text-lg text-gray-300 leading-relaxed">
-              To prepare students for advanced research, industry, and future space missions by cultivating 
-              both technical depth and systems-level thinking through real-world space engineering projects.
-            </p>
-          </div>
-        </motion.div>
 
       </div>
     </section>

@@ -5,12 +5,12 @@ const Hero = () => {
     <div className="relative min-h-screen w-full overflow-hidden flex items-center">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ 
-            backgroundImage: 'url(/bg.jpg)',
-            filter: 'brightness(0.45)',
-          }}
+        <img 
+          src="/bg.webp" 
+          alt="Background"
+          loading="eager"
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ filter: 'brightness(0.45)' }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-transparent" />
       </div>

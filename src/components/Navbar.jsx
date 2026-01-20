@@ -17,7 +17,7 @@ const Navbar = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <img src="/logo.png" alt="STA Logo" className="h-12 w-auto" />
+            <img src="/logo.webp" alt="STA Logo" className="h-12 w-auto" />
             <div>
               <div className="text-lg font-black tracking-tight text-burnt-orange">STA</div>
               <div className="text-[10px] text-gray-400 uppercase tracking-widest font-semibold">KMUTT</div>
@@ -31,6 +31,11 @@ const Navbar = () => {
             <a href="#projects" className="text-sm font-semibold text-gray-300 hover:text-burnt-orange transition-colors">Projects</a>
             <a href="#news" className="text-sm font-semibold text-gray-300 hover:text-burnt-orange transition-colors">News</a>
             <a href="#contact" className="px-6 py-2 bg-burnt-orange text-white text-sm font-bold rounded hover:bg-deep-ember transition-colors">Contact</a>
+            
+            {/* KMUTT Logo */}
+            <div className="ml-4 pl-4 border-l border-gray-700">
+              <img src="/kmutt-logo.webp" alt="KMUTT" className="h-10 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+            </div>
           </div>
 
           {/* Mobile Menu Button */}

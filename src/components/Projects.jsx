@@ -4,7 +4,7 @@ const Projects = () => {
   const mainFeature = {
     title: "Spaceport America Cup 2025",
     category: "COMPETITION",
-    image: "/project-spaceport.jpg",
+    image: "/project-spaceport.webp",
     description: "Competing in the world's largest intercollegiate rocket engineering competition with 30,000 feet apogee target in New Mexico, USA",
     readTime: "1 MIN READ",
     badge: "NEWS RELEASE"
@@ -13,7 +13,7 @@ const Projects = () => {
   const mediumFeature = {
     title: "School Satellite Competition 2024",
     category: "CUBESAT",
-    image: "/project-cubesat.jpg",
+    image: "/project-cubesat.webp",
     readTime: "3 MIN READ",
     badge: "NEWS RELEASE"
   };
@@ -22,14 +22,14 @@ const Projects = () => {
     {
       title: "Rocket Test Stand Development",
       category: "TESTING",
-      image: "/project-teststand.jpg",
+      image: "/project-teststand.webp",
       readTime: "2 MIN READ",
       badge: "BLOG"
     },
     {
       title: "IAAI International Conference",
       category: "RESEARCH",
-      image: "/project-iaai.png",
+      image: "/project-iaai.webp",
       readTime: "2 MIN READ",
       badge: "BLOG"
     }
@@ -40,25 +40,25 @@ const Projects = () => {
       title: "DekDTcas Open House",
       description: "Showcasing space technology to high school students",
       readTime: "2 MIN READ",
-      image: "/event-dekdtcas.png"
+      image: "/event-dekdtcas.webp"
     },
     {
       title: "KMUTT Open House 2024",
       description: "Interactive rocket and satellite demonstrations",
       readTime: "3 MIN READ",
-      image: "/event-openworld.png"
+      image: "/event-openworld.webp"
     },
     {
       title: "KMUTT Open House 2025",
       description: "Latest space technology showcase and recruitment",
       readTime: "2 MIN READ",
-      image: "/event-openhouse2025.png"
+      image: "/event-openhouse2025.webp"
     },
     {
       title: "STA x EASA Collaboration",
       description: "Joint rocket propulsion testing event",
       readTime: "3 MIN READ",
-      image: "/event-easa.png"
+      image: "/event-easa.webp"
     }
   ];
 
@@ -101,6 +101,7 @@ const Projects = () => {
                 <img 
                   src={mainFeature.image} 
                   alt={mainFeature.title}
+                  loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
@@ -142,6 +143,7 @@ const Projects = () => {
                 <img 
                   src={mediumFeature.image} 
                   alt={mediumFeature.title}
+                  loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
@@ -182,6 +184,7 @@ const Projects = () => {
                   <img 
                     src={project.image} 
                     alt={project.title}
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
@@ -225,6 +228,7 @@ const Projects = () => {
                 <img 
                   src={article.image} 
                   alt={article.title}
+                  loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
