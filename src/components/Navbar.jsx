@@ -5,8 +5,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full bg-transparent backdrop-blur-sm z-50">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <nav className="fixed top-0 w-full z-50">
+      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent backdrop-blur-sm"></div>
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           
           {/* Logo */}
