@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,27 +11,28 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           
           {/* Logo */}
-          <motion.a
-            href="#home"
-            className="flex items-center gap-2"
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <img src="/logo.webp" alt="STA Logo" className="h-10 md:h-12 w-auto" />
-            <div>
-              <div className="text-base md:text-lg font-black tracking-tight text-burnt-orange">STA</div>
-              <div className="text-[9px] md:text-[10px] text-gray-400 uppercase tracking-widest font-semibold">KMUTT</div>
-            </div>
-          </motion.a>
+            <Link to="/" className="flex items-center gap-2">
+              <img src="/logo.webp" alt="STA Logo" className="h-10 md:h-12 w-auto" />
+              <div>
+                <div className="text-base md:text-lg font-black tracking-tight text-burnt-orange">STA</div>
+                <div className="text-[9px] md:text-[10px] text-gray-400 uppercase tracking-widest font-semibold">KMUTT</div>
+              </div>
+            </Link>
+          </motion.div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#home" className="text-sm font-semibold text-gray-300 hover:text-burnt-orange transition-colors">Home</a>
-            <a href="#about" className="text-sm font-semibold text-gray-300 hover:text-burnt-orange transition-colors">About</a>
-            <a href="#projects" className="text-sm font-semibold text-gray-300 hover:text-burnt-orange transition-colors">Projects</a>
-            <a href="#news" className="text-sm font-semibold text-gray-300 hover:text-burnt-orange transition-colors">News</a>
-            <a href="#contact" className="px-6 py-2 bg-burnt-orange text-white text-sm font-bold rounded hover:bg-deep-ember transition-colors">Contact</a>
+            <a href="/#home" className="text-sm font-semibold text-gray-300 hover:text-burnt-orange transition-colors">Home</a>
+            <a href="/#about" className="text-sm font-semibold text-gray-300 hover:text-burnt-orange transition-colors">About</a>
+            <a href="/#projects" className="text-sm font-semibold text-gray-300 hover:text-burnt-orange transition-colors">Projects</a>
+            <Link to="/cubesat-systems" className="text-sm font-semibold text-gray-300 hover:text-burnt-orange transition-colors">CubeSat</Link>
+            <a href="/#news" className="text-sm font-semibold text-gray-300 hover:text-burnt-orange transition-colors">News</a>
+            <a href="/#contact" className="px-6 py-2 bg-burnt-orange text-white text-sm font-bold rounded hover:bg-deep-ember transition-colors">Contact</a>
             
             {/* KMUTT Logo */}
             <div className="ml-4 pl-4 border-l border-gray-700">
@@ -64,35 +66,42 @@ const Navbar = () => {
         >
           <div className="px-6 py-6 space-y-1">
             <a 
-              href="#home" 
+              href="/#home" 
               onClick={() => setIsOpen(false)}
               className="block py-3 text-base font-semibold text-gray-300 hover:text-burnt-orange transition-colors border-b border-white/5"
             >
               Home
             </a>
             <a 
-              href="#about" 
+              href="/#about" 
               onClick={() => setIsOpen(false)}
               className="block py-3 text-base font-semibold text-gray-300 hover:text-burnt-orange transition-colors border-b border-white/5"
             >
               About
             </a>
             <a 
-              href="#projects" 
+              href="/#projects" 
               onClick={() => setIsOpen(false)}
               className="block py-3 text-base font-semibold text-gray-300 hover:text-burnt-orange transition-colors border-b border-white/5"
             >
               Projects
             </a>
+            <Link 
+              to="/cubesat-systems" 
+              onClick={() => setIsOpen(false)}
+              className="block py-3 text-base font-semibold text-gray-300 hover:text-burnt-orange transition-colors border-b border-white/5"
+            >
+              CubeSat Systems
+            </Link>
             <a 
-              href="#news" 
+              href="/#news" 
               onClick={() => setIsOpen(false)}
               className="block py-3 text-base font-semibold text-gray-300 hover:text-burnt-orange transition-colors border-b border-white/5"
             >
               News
             </a>
             <a 
-              href="#contact" 
+              href="/#contact" 
               onClick={() => setIsOpen(false)}
               className="block py-3 text-base font-semibold text-gray-300 hover:text-burnt-orange transition-colors"
             >

@@ -1,24 +1,21 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Projects from './components/Projects';
-import Explore from './components/Explore';
-import JoinUs from './components/JoinUs';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import CubeSatPage from './pages/CubeSatPage';
+import GroundStationPage from './pages/GroundStationPage';
 
 function App() {
   return (
-    <div className="min-h-screen bg-space-black">
-      <Navbar />
-      <Hero />
-      <Projects />
-      <About />
-      <Explore />
-      <JoinUs />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <div className="min-h-screen bg-space-black">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/cubesat-systems" element={<CubeSatPage />} />
+          <Route path="/ground-station-gis" element={<GroundStationPage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
