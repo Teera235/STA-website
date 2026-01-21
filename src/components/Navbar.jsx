@@ -5,23 +5,22 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full z-50">
-      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent backdrop-blur-sm"></div>
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
+    <nav className="fixed top-0 w-full z-50 backdrop-blur-md">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           
           {/* Logo */}
           <motion.a
             href="#home"
-            className="flex items-center gap-3"
+            className="flex items-center gap-2"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <img src="/logo.webp" alt="STA Logo" className="h-12 w-auto" />
+            <img src="/logo.webp" alt="STA Logo" className="h-10 md:h-12 w-auto" />
             <div>
-              <div className="text-lg font-black tracking-tight text-burnt-orange">STA</div>
-              <div className="text-[10px] text-gray-400 uppercase tracking-widest font-semibold">KMUTT</div>
+              <div className="text-base md:text-lg font-black tracking-tight text-burnt-orange">STA</div>
+              <div className="text-[9px] md:text-[10px] text-gray-400 uppercase tracking-widest font-semibold">KMUTT</div>
             </div>
           </motion.a>
 
@@ -58,17 +57,50 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <motion.div 
-          className="md:hidden bg-black/90 backdrop-blur-md"
+          className="md:hidden backdrop-blur-md border-t border-white/10"
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: 'auto' }}
           exit={{ opacity: 0, height: 0 }}
         >
-          <div className="px-6 py-4 space-y-3">
-            <a href="#home" className="block py-2 text-sm font-semibold text-gray-300 hover:text-burnt-orange transition-colors">Home</a>
-            <a href="#about" className="block py-2 text-sm font-semibold text-gray-300 hover:text-burnt-orange transition-colors">About</a>
-            <a href="#projects" className="block py-2 text-sm font-semibold text-gray-300 hover:text-burnt-orange transition-colors">Projects</a>
-            <a href="#news" className="block py-2 text-sm font-semibold text-gray-300 hover:text-burnt-orange transition-colors">News</a>
-            <a href="#contact" className="block py-2 text-sm font-semibold text-gray-300 hover:text-burnt-orange transition-colors">Contact</a>
+          <div className="px-6 py-6 space-y-1">
+            <a 
+              href="#home" 
+              onClick={() => setIsOpen(false)}
+              className="block py-3 text-base font-semibold text-gray-300 hover:text-burnt-orange transition-colors border-b border-white/5"
+            >
+              Home
+            </a>
+            <a 
+              href="#about" 
+              onClick={() => setIsOpen(false)}
+              className="block py-3 text-base font-semibold text-gray-300 hover:text-burnt-orange transition-colors border-b border-white/5"
+            >
+              About
+            </a>
+            <a 
+              href="#projects" 
+              onClick={() => setIsOpen(false)}
+              className="block py-3 text-base font-semibold text-gray-300 hover:text-burnt-orange transition-colors border-b border-white/5"
+            >
+              Projects
+            </a>
+            <a 
+              href="#news" 
+              onClick={() => setIsOpen(false)}
+              className="block py-3 text-base font-semibold text-gray-300 hover:text-burnt-orange transition-colors border-b border-white/5"
+            >
+              News
+            </a>
+            <a 
+              href="#contact" 
+              onClick={() => setIsOpen(false)}
+              className="block py-3 text-base font-semibold text-gray-300 hover:text-burnt-orange transition-colors"
+            >
+              Contact
+            </a>
+            <div className="pt-4 flex items-center justify-center">
+              <img src="/kmutt-logo.webp" alt="KMUTT" className="h-12 w-auto opacity-60" />
+            </div>
           </div>
         </motion.div>
       )}
