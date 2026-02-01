@@ -31,6 +31,7 @@ const Navbar = () => {
             <a href="/#about" className="text-sm font-semibold text-gray-300 hover:text-burnt-orange transition-colors">About</a>
             <a href="/#projects" className="text-sm font-semibold text-gray-300 hover:text-burnt-orange transition-colors">Projects</a>
             <Link to="/cubesat-systems" className="text-sm font-semibold text-gray-300 hover:text-burnt-orange transition-colors">CubeSat</Link>
+            <Link to="/klonas" className="text-sm font-semibold text-gray-300 hover:text-burnt-orange transition-colors">KLONAS</Link>
             <a href="/#news" className="text-sm font-semibold text-gray-300 hover:text-burnt-orange transition-colors">News</a>
             <a href="/#contact" className="px-6 py-2 bg-burnt-orange text-white text-sm font-bold rounded hover:bg-deep-ember transition-colors">Contact</a>
             
@@ -92,6 +93,13 @@ const Navbar = () => {
               className="block py-3 text-base font-semibold text-gray-300 hover:text-burnt-orange transition-colors border-b border-white/5"
             >
               CubeSat Systems
+            </Link>
+            <Link 
+              to="/klonas" 
+              onClick={() => setIsOpen(false)}
+              className="block py-3 text-base font-semibold text-gray-300 hover:text-burnt-orange transition-colors border-b border-white/5"
+            >
+              KLONAS Team
             </Link>
             <a 
               href="/#news" 

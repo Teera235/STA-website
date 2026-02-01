@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import CubeSatPage from './pages/CubeSatPage';
 import GroundStationPage from './pages/GroundStationPage';
+import KlonasPage from './pages/KlonasPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/cubesat-systems" element={<CubeSatPage />} />
           <Route path="/ground-station-gis" element={<GroundStationPage />} />
+          <Route path="/klonas" element={<KlonasPage />} />
         </Routes>
       </div>
     </Router>
