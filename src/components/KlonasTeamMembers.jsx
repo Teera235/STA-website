@@ -2,78 +2,39 @@ import { motion } from 'framer-motion';
 
 const KlonasTeamMembers = () => {
   const teamPhotos = [
-    { src: "/team/first-meet-1.jpg", alt: "KLONAS First Meeting 1" },
-    { src: "/team/first-meet-2.jpg", alt: "KLONAS First Meeting 2" },
-    { src: "/team/first-meet-3.jpg", alt: "KLONAS First Meeting 3" },
-    { src: "/team/first-meet-4.jpg", alt: "KLONAS First Meeting 4" },
-    { src: "/team/first-meet-5.jpg", alt: "KLONAS First Meeting 5" },
-    { src: "/team/first-meet-6.jpg", alt: "KLONAS First Meeting 6" },
-    { src: "/team/kickstart-1.jpg", alt: "Project Kickstart 1" },
-    { src: "/team/kickstart-2.jpg", alt: "Project Kickstart 2" },
-    { src: "/team/kickstart-3.jpg", alt: "Project Kickstart 3" },
-    { src: "/team/kickstart-4.jpg", alt: "Project Kickstart 4" }
+    { src: "/team/first-meet-1.jpg", alt: "KLONAS First Meeting" },
+    { src: "/team/first-meet-2.jpg", alt: "Team Discussion" },
+    { src: "/team/first-meet-3.jpg", alt: "Workshop Session" },
+    { src: "/team/first-meet-4.jpg", alt: "Team Collaboration" },
+    { src: "/team/first-meet-5.jpg", alt: "Project Planning" },
+    { src: "/team/first-meet-6.jpg", alt: "Team Building" },
+    { src: "/team/kickstart-1.jpg", alt: "Project Kickstart" },
+    { src: "/team/kickstart-2.jpg", alt: "Rocket Model Display" },
+    { src: "/team/kickstart-3.jpg", alt: "Team Photo" },
+    { src: "/team/kickstart-4.jpg", alt: "Group Activity" }
   ];
 
   return (
-    <section id="team" className="py-20 bg-gray-900">
+    <section id="team" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
+          <span className="inline-block px-6 py-2 bg-burnt-orange/10 border-2 border-burnt-orange/20 rounded-full text-burnt-orange text-sm font-bold uppercase tracking-wider mb-6">
+            Our Team
+          </span>
+          <h2 className="text-5xl md:text-6xl font-black text-gray-900 mb-6">
             Meet the <span className="text-burnt-orange">Team</span>
           </h2>
-          <div className="w-24 h-1 bg-burnt-orange mx-auto mb-6"></div>
-          <p className="text-gray-300 text-lg max-w-3xl mx-auto">
+          <div className="w-32 h-2 bg-burnt-orange mx-auto rounded-full mb-6"></div>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Our dedicated team of students working together to advance space technology at KMUTT
           </p>
-        </motion.div>
-
-        {/* Team Membership Requirements */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="mb-16 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-8"
-        >
-          <h3 className="text-2xl font-bold text-burnt-orange mb-6">Team Membership Requirements</h3>
-          <p className="text-gray-300 mb-4">To maintain active team membership, all members must meet the following basic requirements:</p>
-          <ul className="space-y-3 text-gray-300">
-            <li className="flex items-start gap-3">
-              <svg className="w-6 h-6 text-burnt-orange flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span>Join the team's Discord server and provide complete information, including full name, role/position, and other required details.</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <svg className="w-6 h-6 text-burnt-orange flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span>Attend team meetings, with an <strong className="text-burnt-orange">attendance rate of more than 50%</strong> of all meetings.</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <svg className="w-6 h-6 text-burnt-orange flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span>Actively participate in team tasks and remain consistently active.</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <svg className="w-6 h-6 text-burnt-orange flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span>Be a student of King Mongkut's University of Technology Thonburi (KMUTT) and have no record of serious violations of university regulations.</span>
-            </li>
-          </ul>
-          <div className="mt-6 p-4 bg-burnt-orange/10 border border-burnt-orange/30 rounded">
-            <p className="text-sm text-gray-300">
-              <strong className="text-burnt-orange">Note:</strong> If a member does not meet the above requirements, their status will be updated to <strong>Inactive Team Members</strong>. Inactive members will not be counted as official team members when team outputs or achievements are made public, and will have their rights and privileges as both a team member and club member reduced.
-            </p>
-          </div>
         </motion.div>
 
         {/* Team Photos Gallery */}
@@ -82,9 +43,9 @@ const KlonasTeamMembers = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
+          className="mb-20"
         >
-          <h3 className="text-2xl font-bold text-white mb-8 text-center">Team Gallery</h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {teamPhotos.map((photo, idx) => (
               <motion.div
                 key={idx}
@@ -92,37 +53,97 @@ const KlonasTeamMembers = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: idx * 0.05 }}
                 viewport={{ once: true }}
-                className="relative group overflow-hidden rounded-lg aspect-square"
+                className="relative group overflow-hidden rounded-2xl aspect-square shadow-lg hover:shadow-2xl transition-all"
               >
                 <img 
                   src={photo.src} 
                   alt={photo.alt}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                  <p className="text-white text-sm font-semibold">{photo.alt}</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                  <p className="text-white text-sm font-bold">{photo.alt}</p>
                 </div>
               </motion.div>
             ))}
           </div>
         </motion.div>
 
-        {/* Contact Information */}
+        {/* Membership Requirements */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="mt-16 text-center"
+          className="mb-16"
         >
-          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-burnt-orange mb-4">Join KLONAS</h3>
-            <p className="text-gray-300 mb-6">
+          <div className="bg-gray-50 border-2 border-gray-200 rounded-3xl p-10 shadow-xl">
+            <h3 className="text-3xl font-black text-gray-900 mb-8">Team Membership Requirements</h3>
+            
+            <p className="text-gray-700 mb-6 text-lg">To maintain active team membership, all members must meet the following requirements:</p>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="flex items-start gap-4">
+                <div className="w-8 h-8 bg-burnt-orange rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-white font-bold text-sm">1</span>
+                </div>
+                <div>
+                  <p className="text-gray-700 leading-relaxed">Join the team's <strong className="text-gray-900">Discord server</strong> and provide complete information</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-4">
+                <div className="w-8 h-8 bg-burnt-orange rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-white font-bold text-sm">2</span>
+                </div>
+                <div>
+                  <p className="text-gray-700 leading-relaxed">Attend team meetings with <strong className="text-burnt-orange">attendance rate &gt; 50%</strong></p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-4">
+                <div className="w-8 h-8 bg-burnt-orange rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-white font-bold text-sm">3</span>
+                </div>
+                <div>
+                  <p className="text-gray-700 leading-relaxed"><strong className="text-gray-900">Actively participate</strong> in team tasks and remain consistently active</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-4">
+                <div className="w-8 h-8 bg-burnt-orange rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-white font-bold text-sm">4</span>
+                </div>
+                <div>
+                  <p className="text-gray-700 leading-relaxed">Be a <strong className="text-gray-900">KMUTT student</strong> with no serious violations</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 p-6 bg-white border-2 border-burnt-orange/20 rounded-2xl">
+              <p className="text-sm text-gray-700">
+                <strong className="text-burnt-orange">⚠️ Important:</strong> Members not meeting these requirements will be updated to <strong>Inactive Status</strong>, 
+                with reduced rights and privileges as team and club members.
+              </p>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Join CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center"
+        >
+          <div className="bg-gradient-to-br from-burnt-orange to-orange-600 rounded-3xl p-12 shadow-2xl max-w-3xl mx-auto">
+            <h3 className="text-4xl font-black text-white mb-4">Join KLONAS Today</h3>
+            <p className="text-xl text-white/90 mb-8 leading-relaxed">
               Interested in joining our team? We welcome passionate students who want to contribute to space technology development.
             </p>
             <a
               href="#contact"
-              className="inline-block px-8 py-4 bg-burnt-orange text-white font-bold rounded uppercase text-sm tracking-wider hover:bg-deep-ember transition-colors"
+              className="inline-block px-12 py-5 bg-white text-burnt-orange font-bold rounded-xl uppercase text-sm tracking-wider hover:bg-gray-100 transition-all hover:scale-105 shadow-xl"
             >
               Contact Us
             </a>

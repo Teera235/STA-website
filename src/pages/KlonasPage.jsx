@@ -1,8 +1,8 @@
 import KlonasHero from '../components/KlonasHero';
 import KlonasAbout from '../components/KlonasAbout';
-import KlonasTeamStructure from '../components/KlonasTeamStructure';
-import KlonasPhases from '../components/KlonasPhases';
 import KlonasOverview from '../components/KlonasOverview';
+import KlonasPhases from '../components/KlonasPhases';
+import KlonasTeamStructure from '../components/KlonasTeamStructure';
 import KlonasTeamMembers from '../components/KlonasTeamMembers';
 import Footer from '../components/Footer';
 
