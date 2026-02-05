@@ -8,7 +8,7 @@ const KlonasAbout = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src="/team/first-meet-6.jpg" 
+            src="/team/first-meet-6.webp" 
             alt="KLONAS Team"
             className="absolute inset-0 w-full h-full object-cover"
             style={{ filter: 'brightness(0.25) blur(1px)' }}
@@ -147,7 +147,7 @@ const KlonasAbout = () => {
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 bg-white">
                   <img 
-                    src="/advisor.png" 
+                    src="/advisor.webp" 
                     alt="Dr. Jiravit Pratvittaya"
                     className="w-full h-full object-cover"
                   />
@@ -175,7 +175,7 @@ const KlonasAbout = () => {
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 bg-white p-2">
                   <img 
-                    src="/kmutt-logo.png" 
+                    src="/kmutt-logo.webp" 
                     alt="KMUTT Logo"
                     className="w-full h-full object-contain"
                   />

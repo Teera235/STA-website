@@ -6,7 +6,7 @@ const KlonasHero = () => {
       {/* Background Image with Blur and Dark Overlay */}
       <div className="absolute inset-0">
         <img 
-          src="/klonas-bg.jpg" 
+          src="/klonas-bg.webp" 
           alt="KLONAS Team Background"
           loading="eager"
           className="absolute inset-0 w-full h-full object-cover"
@@ -29,7 +29,7 @@ const KlonasHero = () => {
               className="mb-8"
             >
               <img 
-                src="/klonas-logo.png" 
+                src="/klonas-logo.webp" 
                 alt="KLONAS Logo" 
                 className="h-32 md:h-40 mb-6"
               />
@@ -121,7 +121,7 @@ const KlonasHero = () => {
           >
             <div className="relative">
               <img 
-                src="/cubesat-model.png" 
+                src="/cubesat-model.webp" 
                 alt="CubeSat Model" 
                 className="w-full max-w-lg drop-shadow-2xl"
               />

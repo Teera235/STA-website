@@ -2,16 +2,16 @@ import { motion } from 'framer-motion';
 
 const KlonasTeamMembers = () => {
   const teamPhotos = [
-    { src: "/team/first-meet-1.jpg", alt: "KLONAS First Meeting" },
-    { src: "/team/first-meet-2.jpg", alt: "Team Discussion" },
-    { src: "/team/first-meet-3.jpg", alt: "Workshop Session" },
-    { src: "/team/first-meet-4.jpg", alt: "Team Collaboration" },
-    { src: "/team/first-meet-5.jpg", alt: "Project Planning" },
-    { src: "/team/first-meet-6.jpg", alt: "Team Building" },
-    { src: "/team/kickstart-1.jpg", alt: "Project Kickstart" },
-    { src: "/team/kickstart-2.jpg", alt: "Rocket Model Display" },
-    { src: "/team/kickstart-3.jpg", alt: "Team Photo" },
-    { src: "/team/kickstart-4.jpg", alt: "Group Activity" }
+    { src: "/team/first-meet-1.webp", alt: "KLONAS First Meeting" },
+    { src: "/team/first-meet-2.webp", alt: "Team Discussion" },
+    { src: "/team/first-meet-3.webp", alt: "Workshop Session" },
+    { src: "/team/first-meet-4.webp", alt: "Team Collaboration" },
+    { src: "/team/first-meet-5.webp", alt: "Project Planning" },
+    { src: "/team/first-meet-6.webp", alt: "Team Building" },
+    { src: "/team/kickstart-1.webp", alt: "Project Kickstart" },
+    { src: "/team/kickstart-2.webp", alt: "Rocket Model Display" },
+    { src: "/team/kickstart-3.webp", alt: "Team Photo" },
+    { src: "/team/kickstart-4.webp", alt: "Group Activity" }
   ];
 
   return (

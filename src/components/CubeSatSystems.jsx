@@ -5,15 +5,15 @@ const CubeSatSystems = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const cubeSatImages = [
-    { id: 1, src: '/cubesat-system/1.jpg', alt: 'CubeSat Size Comparison', caption: 'Real-life size comparison of CubeSat units' },
-    { id: 2, src: '/cubesat-system/2.jpg', alt: 'CubeSat Units', caption: 'Different CubeSat configurations from 1U to 16U' },
-    { id: 3, src: '/cubesat-system/3.jpg', alt: 'CubeSat vs Microsatellite', caption: 'Comparison between CubeSat and microsatellite' },
-    { id: 4, src: '/cubesat-system/4.jpg', alt: 'CubeSat Components', caption: 'Internal components of a CubeSat' },
-    { id: 5, src: '/cubesat-system/5.jpg', alt: 'CubeSat Bus Architecture', caption: 'Exploded view of satellite bus structure' },
-    { id: 6, src: '/cubesat-system/6.jpg', alt: 'CubeSat Payload', caption: 'High-resolution optical payload system' },
-    { id: 7, src: '/cubesat-system/7.jpg', alt: 'CubeSat Applications', caption: 'Various applications of CubeSat technology' },
-    { id: 8, src: '/cubesat-system/8.jpg', alt: 'CubeSat Deployment', caption: 'CubeSat deployment from ISS' },
-    { id: 9, src: '/cubesat-system/9.jpg', alt: 'CubeSat Mission', caption: 'CubeSat in orbit mission' }
+    { id: 1, src: '/cubesat-system/1.webp', alt: 'CubeSat Size Comparison', caption: 'Real-life size comparison of CubeSat units' },
+    { id: 2, src: '/cubesat-system/2.webp', alt: 'CubeSat Units', caption: 'Different CubeSat configurations from 1U to 16U' },
+    { id: 3, src: '/cubesat-system/3.webp', alt: 'CubeSat vs Microsatellite', caption: 'Comparison between CubeSat and microsatellite' },
+    { id: 4, src: '/cubesat-system/4.webp', alt: 'CubeSat Components', caption: 'Internal components of a CubeSat' },
+    { id: 5, src: '/cubesat-system/5.webp', alt: 'CubeSat Bus Architecture', caption: 'Exploded view of satellite bus structure' },
+    { id: 6, src: '/cubesat-system/6.webp', alt: 'CubeSat Payload', caption: 'High-resolution optical payload system' },
+    { id: 7, src: '/cubesat-system/7.webp', alt: 'CubeSat Applications', caption: 'Various applications of CubeSat technology' },
+    { id: 8, src: '/cubesat-system/8.webp', alt: 'CubeSat Deployment', caption: 'CubeSat deployment from ISS' },
+    { id: 9, src: '/cubesat-system/9.webp', alt: 'CubeSat Mission', caption: 'CubeSat in orbit mission' }
   ];
 
   return (
@@ -22,7 +22,7 @@ const CubeSatSystems = () => {
       <div className="relative h-[60vh] min-h-[400px] bg-space-black overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="/cubesat-system/1.jpg" 
+            src="/cubesat-system/1.webp" 
             alt="CubeSat Systems"
             className="w-full h-full object-cover opacity-40"
           />
